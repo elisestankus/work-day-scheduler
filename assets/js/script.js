@@ -12,6 +12,16 @@ $(function () {
   var saveHour15Btn = $('#saveHour15');
   var saveHour16Btn = $('#saveHour16');
   var saveHour17Btn = $('#saveHour17');
+
+  var hour9Input = $('textarea[name = "hour9Input"]');
+  var hour10Input = $('textarea[name = "hour10Input"]');
+  var hour11Input = $('textarea[name = "hour11Input"]');
+  var hour12Input = $('textarea[name = "hour12Input"]');
+  var hour13Input = $('textarea[name = "hour13Input"]');
+  var hour14Input = $('textarea[name = "hour14Input"]');
+  var hour15Input = $('textarea[name = "hour15Input"]');
+  var hour16Input = $('textarea[name = "hour16Input"]');
+  var hour17Input = $('textarea[name = "hour17Input"]');
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
