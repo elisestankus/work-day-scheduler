@@ -61,12 +61,16 @@ $(function () {
     confirmationMessage.text('Appointment saved to local storage');
   }
 
+  saveHour9Btn.on("click", saveHour9)
+
   function saveHour10() {
     var hour10 = hour10Input.val();
     localStorage.setItem("hour10", JSON.stringify(hour10));
     storeHour10();
     confirmationMessage.text('Appointment saved to local storage');
   }
+
+  saveHour10Btn.on("click", saveHour10)
 
   function saveHour11() {
     var hour11 = hour11Input.val();
@@ -75,12 +79,16 @@ $(function () {
     confirmationMessage.text('Appointment saved to local storage');
   }
 
+  saveHour11Btn.on("click", saveHour11)
+
   function saveHour12() {
     var hour12 = hour12Input.val();
     localStorage.setItem("hour12", JSON.stringify(hour12));
     storeHour12();
     confirmationMessage.text('Appointment saved to local storage');
   }
+
+  saveHour12Btn.on("click", saveHour12)
 
   function saveHour13() {
     var hour13 = hour13Input.val();
@@ -89,12 +97,16 @@ $(function () {
     confirmationMessage.text('Appointment saved to local storage');
   }
 
+  saveHour13Btn.on("click", saveHour13)
+
   function saveHour14() {
     var hour14 = hour14Input.val();
     localStorage.setItem("hour14", JSON.stringify(hour14));
     storeHour14();
     confirmationMessage.text('Appointment saved to local storage');
   }
+
+  saveHour14Btn.on("click", saveHour14)
 
   function saveHour15() {
     var hour15 = hour15Input.val();
@@ -103,6 +115,8 @@ $(function () {
     confirmationMessage.text('Appointment saved to local storage');
   }
 
+  saveHour15Btn.on("click", saveHour15)
+
   function saveHour16() {
     var hour16 = hour16Input.val();
     localStorage.setItem("hour16", JSON.stringify(hour16));
@@ -110,12 +124,16 @@ $(function () {
     confirmationMessage.text('Appointment saved to local storage');
   }
 
+  saveHour16Btn.on("click", saveHour16)
+
   function saveHour17() {
     var hour17 = hour17Input.val();
     localStorage.setItem("hour17", JSON.stringify(hour17));
     storeHour17();
     confirmationMessage.text('Appointment saved to local storage');
   }
+
+  saveHour17Btn.on("click", saveHour17)
   //
   // TODO: Add code to display the current date in the header of the page.
   var currentDate = dayjs().format('dddd[,] MMMM D[,] YYYY');
