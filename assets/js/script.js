@@ -179,6 +179,18 @@ $(function () {
   }
 
   saveHour17Btn.on("click", saveHour17)
+
+  function init() {
+    storeHour9();
+    storeHour10();
+    storeHour11();
+    storeHour12();
+    storeHour13();
+    storeHour14();
+    storeHour15();
+    storeHour16();
+    storeHour17();
+  }
   //
   // TODO: Add code to display the current date in the header of the page.
   var currentDate = dayjs().format('dddd[,] MMMM D[,] YYYY');
