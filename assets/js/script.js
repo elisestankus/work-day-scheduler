@@ -17,17 +17,15 @@ $(function () {
   //
   var currentHour = dayjs().format('H');
 
-  var hours = ['9','10','11','12','13','14','15','16','17'];
-
-  for(var i=0; i<hours.length;i++) {
-    if(hours[i]===currentHour) {
-      $('#hour-'+hours[i]).addClass('present')
+  for(var i=9; i<18;i++) {
+    if(i==currentHour) {
+      $('#hour-'+i).addClass('present')
     }
-    else if(hours[i]<currentHour) {
-      $('#hour-'+hours[i]).addClass('past')
+    else if(i<currentHour) {
+      $('#hour-'+i).addClass('past')
     }
-    else if(hours[i]>currentHour) {
-      $('#hour-'+hours[i]).addClass('future')
+    else if(i>currentHour) {
+      $('#hour-'+i).addClass('future')
     }
   }
   // TODO: Add code to get any user input that was saved in localStorage and set
