@@ -191,6 +191,8 @@ $(function () {
     storeHour16();
     storeHour17();
   }
+
+  init();
   //
   // TODO: Add code to display the current date in the header of the page.
   var currentDate = dayjs().format('dddd[,] MMMM D[,] YYYY');
