@@ -2,6 +2,16 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
+
+  var saveHour9Btn = $('#saveHour9');
+  var saveHour10Btn = $('#saveHour10');
+  var saveHour11Btn = $('#saveHour11');
+  var saveHour12Btn = $('#saveHour12');
+  var saveHour13Btn = $('#saveHour13');
+  var saveHour14Btn = $('#saveHour14');
+  var saveHour15Btn = $('#saveHour15');
+  var saveHour16Btn = $('#saveHour16');
+  var saveHour17Btn = $('#saveHour17');
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
