@@ -54,6 +54,11 @@ $(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
 
+  function storeHour9 () {
+    var hour9Store = JSON.parse(localStorage.getItem("hour9"));
+    hour9Input.val(hour9Store);
+  }
+
   function saveHour9() {
     var hour9 = hour9Input.val();
     localStorage.setItem("hour9", JSON.stringify(hour9));
@@ -62,6 +67,11 @@ $(function () {
   }
 
   saveHour9Btn.on("click", saveHour9)
+
+  function storeHour10 () {
+    var hour10Store = JSON.parse(localStorage.getItem("hour10"));
+    hour10Input.val(hour10Store);
+  }
 
   function saveHour10() {
     var hour10 = hour10Input.val();
@@ -72,6 +82,11 @@ $(function () {
 
   saveHour10Btn.on("click", saveHour10)
 
+  function storeHour11 () {
+    var hour11Store = JSON.parse(localStorage.getItem("hour11"));
+    hour11Input.val(hour11Store);
+  }
+
   function saveHour11() {
     var hour11 = hour11Input.val();
     localStorage.setItem("hour11", JSON.stringify(hour11));
@@ -80,6 +95,11 @@ $(function () {
   }
 
   saveHour11Btn.on("click", saveHour11)
+
+  function storeHour12 () {
+    var hour12Store = JSON.parse(localStorage.getItem("hour12"));
+    hour12Input.val(hour12Store);
+  }
 
   function saveHour12() {
     var hour12 = hour12Input.val();
@@ -90,6 +110,11 @@ $(function () {
 
   saveHour12Btn.on("click", saveHour12)
 
+  function storeHour13 () {
+    var hour13Store = JSON.parse(localStorage.getItem("hour13"));
+    hour13Input.val(hour13Store);
+  }
+
   function saveHour13() {
     var hour13 = hour13Input.val();
     localStorage.setItem("hour13", JSON.stringify(hour13));
@@ -98,6 +123,11 @@ $(function () {
   }
 
   saveHour13Btn.on("click", saveHour13)
+
+  function storeHour14 () {
+    var hour14Store = JSON.parse(localStorage.getItem("hour14"));
+    hour14Input.val(hour14Store);
+  }
 
   function saveHour14() {
     var hour14 = hour14Input.val();
@@ -108,6 +138,11 @@ $(function () {
 
   saveHour14Btn.on("click", saveHour14)
 
+  function storeHour15 () {
+    var hour15Store = JSON.parse(localStorage.getItem("hour15"));
+    hour15Input.val(hour15Store);
+  }
+
   function saveHour15() {
     var hour15 = hour15Input.val();
     localStorage.setItem("hour15", JSON.stringify(hour15));
@@ -117,6 +152,11 @@ $(function () {
 
   saveHour15Btn.on("click", saveHour15)
 
+  function storeHour16 () {
+    var hour16Store = JSON.parse(localStorage.getItem("hour16"));
+    hour16Input.val(hour16Store);
+  }
+
   function saveHour16() {
     var hour16 = hour16Input.val();
     localStorage.setItem("hour16", JSON.stringify(hour16));
@@ -125,6 +165,11 @@ $(function () {
   }
 
   saveHour16Btn.on("click", saveHour16)
+
+  function storeHour17 () {
+    var hour17Store = JSON.parse(localStorage.getItem("hour17"));
+    hour17Input.val(hour17Store);
+  }
 
   function saveHour17() {
     var hour17 = hour17Input.val();
