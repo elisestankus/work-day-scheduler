@@ -1,6 +1,5 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+
+//Wrapped all of the code in a cal to jQuery so the code will begin running when the browser has rendered the html content
 $(function () {
 
   var saveHour9Btn = $('#saveHour9');
@@ -24,19 +23,9 @@ $(function () {
   var hour17Input = $('textarea[name = "hour17Input"]');
 
   var confirmationMessage = $('#confirm-message')
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
-  //
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  //
+
+  //assigns current hour (from dayjs) to currentHour var
+  //for loop adds classes for present, past, and future -- started with i=9 to match hour time blocks
   var currentHour = dayjs().format('H');
 
   for(var i=9; i<18;i++) {
@@ -50,15 +39,14 @@ $(function () {
       $('#hour-'+i).addClass('future')
     }
   }
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-
+//retrieves the user input from local storage and assigns the stored value to a hourStore variable -- then assigns the value of the hourStore variable to be the value of the corresponding text area
   function storeHour9 () {
     var hour9Store = JSON.parse(localStorage.getItem("hour9"));
     hour9Input.val(hour9Store);
   }
 
+  //assigns user input to an hour# variable, saves the hour# variable to local storage, then calls the storeHour# function
+  //also sets confirmation message text 
   function saveHour9() {
     var hour9 = hour9Input.val();
     localStorage.setItem("hour9", JSON.stringify(hour9));
@@ -66,6 +54,7 @@ $(function () {
     confirmationMessage.text('Appointment saved to local storage');
   }
 
+  //when save button is clicked, calls saveHour#
   saveHour9Btn.on("click", saveHour9)
 
   function storeHour10 () {
@@ -180,6 +169,7 @@ $(function () {
 
   saveHour17Btn.on("click", saveHour17)
 
+  //init function ensures that appointments that have been committed to local storage will be rendered when the page is loaded, not just when the save button is clicked
   function init() {
     storeHour9();
     storeHour10();
@@ -193,8 +183,8 @@ $(function () {
   }
 
   init();
-  //
-  // TODO: Add code to display the current date in the header of the page.
+  //gets current date from dayjs and formats it to day, month date, year
+  //sets current date as text for currentDay element in html
   var currentDate = dayjs().format('dddd[,] MMMM D[,] YYYY');
   $('#currentDay').text(currentDate);
 });
