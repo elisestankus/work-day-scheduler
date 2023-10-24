@@ -21,3 +21,5 @@ N/A
 https://elisestankus.github.io/work-day-scheduler/
 
 ## Screenshot
+
+<img src="./assets/work-day-scheduler-screenshot.png" alt="screenshot of work day scheduler page">
